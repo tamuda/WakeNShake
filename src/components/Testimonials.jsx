@@ -17,87 +17,108 @@ const testimonials = [
   [
     {
       content:
-        'Mira’s teaching style is second to none. Everything was easy to follow every step of the way.',
+        "I struggle with getting up in the morning and don't want to disturb my partner. I'd love to have an alarm clock that vibrates just my pillow, so I can wake up peacefully and start my day off right.",
       author: {
-        name: 'Antonio Littel',
-        role: 'Frontend Developer',
-        image: avatarImage3,
+        name: 'Emily T.',
+        role: 'Morning Person',
       },
     },
     {
       content:
-        'Even though I was excited to learn, I was pessimistic that I wouldn’t actually ever get good enough to design my own icons. I was wrong — this book is all I needed.',
+        "As a college student living in a dorm, I often have to wake up at different times than my roommate. It's frustrating to have to use an alarm that wakes us both up. A vibrating alarm clock for just me would be a lifesaver!",
       author: {
-        name: 'Lynn Nolan',
-        role: 'Growth Marketer',
-        image: avatarImage4,
+        name: 'Ryan L.',
+        role: 'College Freshman',
       },
     },
     {
       content:
-        'I’ve been employed as a professional icon designer for years and still learned tons of new tricks that have made my work even better',
+        "I've tried using phone alarms, but they're not effective for me. I need something that will physically wake me up. A vibrating alarm clock seems like a great solution.",
       author: {
-        name: 'Krista Prosacco',
-        role: 'Professional Designer',
-        image: avatarImage9,
+        name: 'Sarah K.',
+        role: 'Heavy Sleeper',
       },
     },
   ],
   [
     {
       content:
-        'I run an ecommerce store selling rare vintage gummy bears and could never find a good gummy bear icon. Now I can design my own in minutes.',
+        'I love the idea of a vibrating alarm clock because I have trouble waking up to sound alone. I also think it would be a great option for people who are hard of hearing.',
       author: {
-        name: 'Cameron Considine',
-        role: 'Entrepreneur',
-        image: avatarImage7,
+        name: 'John M.',
+        role: 'Night Shift Worker',
       },
     },
     {
       content:
-        'The complete package is worth it for the weekly teardown videos alone. I’ve learned so much watching Mira take apart other icons and recreate them from scratch.',
+        "As a working professional, I don't want to wake up my partner with a loud alarm. A vibrating alarm clock would be a perfect solution for me.",
       author: {
-        name: 'Regina Wisoky',
-        role: 'Design Student',
-        image: avatarImage11,
+        name: 'Emily T.',
+        role: 'Working Professional',
       },
     },
     {
       content:
-        'I didn’t expect to find a lot of value in the community but now I’m in there for at least an hour every day picking up tips from other designers.',
+        "As a college student living in a dorm, I often have to wake up at different times than my roommate. It's frustrating to have to use an alarm that wakes us both up. A vibrating alarm clock for just me would be a lifesaver!",
       author: {
-        name: 'Vernon Cummerata',
-        role: 'UI Engineer',
-        image: avatarImage8,
+        name: 'Ryan L.',
+        role: 'College Student',
       },
     },
   ],
   [
     {
       content:
-        'I couldn’t believe how fast Mira moved in Figma compared to my own workflow. I’m designing icons more accurately in half the time with the shortcuts I learned from her videos.',
+        "I've tried using phone alarms, but they're not effective for me. I need something that will physically wake me up. A vibrating alarm clock seems like a great solution.",
       author: {
-        name: 'Steven Hackett',
-        role: 'Bootcamp Instructor',
-        image: avatarImage5,
+        name: 'Sarah K.',
+        role: 'Working Professional',
       },
     },
     {
       content:
-        'I never thought I would enjoy designing icons but using the ideas in this book, it’s become a great way for me to relax while still being creative.',
+        'As a retiree, I have trouble waking up early but need to for my daily routine. A vibrating alarm clock would be a perfect way to wake up without disturbing my partner.',
       author: {
-        name: 'Carla Schoen',
-        role: 'Startup Founder',
-        image: avatarImage10,
+        name: 'John M.',
+        role: 'Retiree',
       },
     },
     {
       content:
-        'All I can say is wow — this is easily the best icon design resource I’ve ever encountered.',
+        'As someone who has trouble sleeping, I think a vibrating alarm clock could help me wake up feeling more refreshed and ready to tackle the day.',
       author: {
-        name: 'Leah Kiehn',
-        role: 'Creative Director',
-        image: avatarImage6,
+        name: 'Rachel P.',
+        role: 'Working Professional',
+      },
+    },
+  ],
+  [
+    {
+      content:
+        "I've never been a morning person, but I have to get up early for work. A vibrating alarm clock that wakes me up gently would be a game changer.",
+      author: {
+        name: 'Mark S.',
+        role: 'Working Professional',
+      },
+    },
+  ],
+  [
+    {
+      content:
+        'As a stay-at-home parent, I need to wake up early to take care of my kids. A vibrating alarm clock could help me get up and start my day without waking up my family.',
+      author: {
+        name: 'Amanda H.',
+        role: 'Stay-at-Home Parent',
+      },
+    },
+  ],
+  [
+    {
+      content:
+        "I'm deaf and have been looking for an alarm clock that will wake me up without relying on sound. A vibrating alarm clock is exactly what I need!",
+      author: {
+        name: 'Michael G.',
+        role: 'Student',
       },
     },
   ],
@@ -137,12 +158,11 @@ export function Testimonials() {
     <section className="py-8 sm:py-10 lg:py-16">
       <Container className="text-center">
         <h2 className="font-display text-4xl font-bold tracking-tight text-slate-900">
-          Some kind words from early customers...
+          Some words from our potential customers...
         </h2>
         <p className="mt-4 text-lg tracking-tight text-slate-600">
-          I worked with a small group of early access customers to make sure all
-          of the content in the book was exactly what they needed. Hears what
-          they had to say about the finished product.
+          We interviewed a diverse group of Students to hear their concerns
+          regarding waking up and thoughts about a vibrating alarm device.
         </p>
       </Container>
       <Expandable>

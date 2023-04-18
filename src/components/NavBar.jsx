@@ -5,18 +5,17 @@ import clsx from 'clsx'
 
 const sections = [
   {
-    id: 'table-of-contents',
+    id: 'features',
     title: (
       <>
-        <span className="hidden lg:inline">Table of contents</span>
-        <span className="lg:hidden">Contents</span>
+        <span className="hidden lg:inline">Features</span>
+        <span className="lg:hidden">Features</span>
       </>
     ),
   },
-  { id: 'screencasts', title: 'Screencasts' },
-  { id: 'resources', title: 'Resources' },
+
   { id: 'pricing', title: 'Pricing' },
-  { id: 'author', title: 'Author' },
+  { id: 'team', title: 'Team' },
 ]
 
 function MenuIcon({ open, ...props }) {
