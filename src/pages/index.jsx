@@ -27,7 +27,7 @@ export default function Home() {
       <Introduction />
       <NavBar />
       <Features />
-      <div className="flex justify-center bg-blue-600 p-40 text-4xl">
+      <div className="flex justify-center bg-gradient-to-br from-blue-500 to-blue-800 p-40 text-4xl">
         <h2 className="font-display text-5xl font-extrabold tracking-tight text-white sm:w-3/4 sm:text-6xl md:w-2/3 lg:w-auto">
           Built for people with big dreams
         </h2>

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { Button } from '@/components/Button'
 import { GridPattern } from '@/components/GridPattern'
 import { StarRating } from '@/components/StarRating'
-import coverImage from '@/images/cover.png'
+import coverImage from '@/images/vibration.gif'
 
 function Testimonial() {
   return (
@@ -28,43 +28,57 @@ function Testimonial() {
 
 export function Hero() {
   return (
-    <header className="overflow-hidden bg-slate-100 lg:bg-transparent lg:px-5">
-      <div className="mx-auto grid max-w-6xl grid-cols-1 grid-rows-[auto_1fr] gap-y-16 pt-16 md:pt-20 lg:grid-cols-12 lg:gap-y-20 lg:px-3 lg:pb-36 lg:pt-20 xl:py-32">
-        <div className="relative flex items-end lg:col-span-5 lg:row-span-2">
-          <div className="absolute -bottom-12 -top-20 left-0 right-1/2 z-10 rounded-br-6xl bg-blue-600 text-white/10 md:bottom-8 lg:-inset-y-32 lg:left-[-100vw] lg:right-full lg:-mr-40"></div>
-          <div className="relative z-10 mx-auto flex w-64 rounded-xl bg-slate-600 shadow-xl md:w-80 lg:w-auto">
+    <div className="relative bg-black">
+      <div className=" mx-auto max-w-7xl justify-center lg:min-h-screen">
+        <div className="flex lg:hidden">
+          <div className="h-full w-full">
             <Image
-              className="w-full"
+              className="h-full bg-gray-50 object-cover"
               src={coverImage}
-              alt="WakeNShake Alarm Clock"
-              priority
+              alt=""
             />
           </div>
         </div>
-        <div className="relative px-4 sm:px-6 lg:col-span-7 lg:pb-14 lg:pl-16 lg:pr-0 xl:pl-20">
-          <div className="hidden lg:absolute lg:-top-32 lg:bottom-0 lg:left-[-100vw] lg:right-[-100vw] lg:block lg:bg-slate-100" />
-          <Testimonial />
-        </div>
-        <div className="bg-white pt-16 lg:col-span-7 lg:bg-transparent lg:pl-16 lg:pt-0 xl:pl-20">
-          <div className="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:px-0">
-            <h1 className="font-display text-5xl font-extrabold text-slate-900 sm:text-6xl">
-              Rise N Shine with
-              <span style={{ color: '#0F9D58' }}> Wake</span>
-              <span style={{ color: '#DB4437' }}>N</span>
-              <span style={{ color: '#F4B400' }}>Shake</span>
-            </h1>
-            <p className="mt-4 text-3xl text-slate-600">
-              Wake up peacefully and on time with our innovative alarm clock
-              that vibrates your pillow, not your roommate's.
-            </p>
-            <div className="mt-8 flex gap-4">
-              <Button href="#free-chapters" color="blue">
-                View Demo
-              </Button>
+        <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
+          <div className="md:h- px-6 pb-24 pt-10 sm:pb-32 lg:col-span-7 lg:px-0 lg:pb-56 lg:pt-48 xl:col-span-6">
+            <div className="mx-auto max-w-2xl lg:mx-0">
+              <h1 className="text-4xl font-bold tracking-tight sm:mt-10 sm:mt-10 sm:text-6xl lg:mt-24">
+                <span className="bg-gradient-to-br from-blue-400 to-blue-800 bg-clip-text text-transparent">
+                  A gentle buzz to wake you and a gentle shake to stop it
+                </span>
+              </h1>
+
+              <p className="mt-6 text-lg leading-8 text-white">
+                Get up and get going with Wake n Shake - the alarm clock that
+                won't disturb your roommates. Put it in your pillow, and it will
+                vibrate to wake you.
+              </p>
+              <div className="mt-10 flex items-center gap-x-6">
+                <a
+                  href="#waitlist"
+                  className="rounded-md bg-gradient-to-r from-blue-600 to-blue-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >
+                  Join Waitlist
+                </a>
+
+                <a
+                  href="#features"
+                  className="text-sm font-semibold leading-6 text-white"
+                >
+                  Learn more <span aria-hidden="true">→</span>
+                </a>
+              </div>
             </div>
+          </div>
+          <div className="relative hidden lg:col-span-3 lg:-mr-8 lg:block xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0">
+            <Image
+              className="h-full bg-gray-50 object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:w-full"
+              src={coverImage}
+              alt=""
+            />
           </div>
         </div>
       </div>
-    </header>
+    </div>
   )
 }

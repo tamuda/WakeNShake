@@ -5,9 +5,9 @@ import { Pattern } from '@/components/Pattern'
 export function Waitlist() {
   return (
     <section
-      id="free-chapters"
+      id="waitlist"
       aria-label="Free preview"
-      className="scroll-mt-14 bg-blue-600 sm:scroll-mt-32"
+      className="scroll-mt-14 bg-gradient-to-br from-blue-600 to-blue-900 sm:scroll-mt-32"
     >
       <div className="overflow-hidden lg:relative">
         <Container
