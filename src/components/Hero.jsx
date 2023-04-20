@@ -1,35 +1,10 @@
 import Image from 'next/image'
-import { Button } from '@/components/Button'
-import { GridPattern } from '@/components/GridPattern'
-import { StarRating } from '@/components/StarRating'
 import coverImage from '@/images/vibration.gif'
-
-function Testimonial() {
-  return (
-    <figure className="relative mx-auto max-w-md text-center lg:mx-0 lg:text-left">
-      <div className="flex justify-center text-blue-600 lg:justify-start">
-        <StarRating />
-      </div>
-      <blockquote className="mt-2">
-        <p className="font-display text-xl font-medium text-slate-900">
-          “This device will be a game changer for me! I can finally wake up on
-          time without disturbing my roommate.”
-        </p>
-      </blockquote>
-      <figcaption className="mt-2 text-sm text-slate-500">
-        <strong className="font-semibold text-blue-600 before:content-['—_']">
-          Alice Jones
-        </strong>
-        , Student at University of Rochester
-      </figcaption>
-    </figure>
-  )
-}
 
 export function Hero() {
   return (
-    <div className="relative bg-black">
-      <div className=" mx-auto max-w-7xl justify-center lg:min-h-screen">
+    <div className="relative bg-black md:pt-10">
+      <div className="mx-auto max-w-7xl justify-center lg:min-h-screen">
         <div className="flex lg:hidden">
           <div className="h-full w-full">
             <Image
@@ -40,7 +15,7 @@ export function Hero() {
           </div>
         </div>
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
-          <div className="md:h- px-6 pb-24 pt-10 sm:pb-32 lg:col-span-7 lg:px-0 lg:pb-56 lg:pt-48 xl:col-span-6">
+          <div className=" z-10 px-6 pb-24 pt-10 sm:pb-32 lg:col-span-7 lg:px-0 lg:pb-56 lg:pt-48 xl:col-span-6">
             <div className="mx-auto max-w-2xl lg:mx-0">
               <h1 className="text-4xl font-bold tracking-tight sm:mt-10 sm:mt-10 sm:text-6xl lg:mt-24">
                 <span className="bg-gradient-to-br from-blue-400 to-blue-800 bg-clip-text text-transparent">
@@ -53,6 +28,7 @@ export function Hero() {
                 won't disturb your roommates. Put it in your pillow, and it will
                 vibrate to wake you.
               </p>
+
               <div className="mt-10 flex items-center gap-x-6">
                 <a
                   href="#waitlist"
@@ -70,9 +46,10 @@ export function Hero() {
               </div>
             </div>
           </div>
-          <div className="relative hidden lg:col-span-3 lg:-mr-8 lg:block xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0">
+
+          <div className="relative z-0 lg:col-span-5 lg:col-start-8 lg:-mr-8 lg:block xl:absolute xl:inset-0 xl:left-1/3 xl:mr-0">
             <Image
-              className="h-full bg-gray-50 object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:w-full"
+              className="hidden h-full bg-gray-50 object-cover lg:inset-0 lg:block lg:aspect-auto lg:w-full"
               src={coverImage}
               alt=""
             />

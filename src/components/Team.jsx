@@ -3,7 +3,12 @@ import Link from 'next/link'
 
 import { GridPattern } from '@/components/GridPattern'
 import { SectionHeading } from '@/components/SectionHeading'
-import authorImage from '@/images/avatars/author.png'
+import Carly from '@/images/avatars/Carly.JPG'
+import Tamuda from '@/images/avatars/Tamuda.jpg'
+import Ellis from '@/images/avatars/Gem.JPG'
+import Gem from '@/images/avatars/Gem.JPG'
+import Sylvia from '@/images/avatars/Sylvia.jpg'
+import Lesley from '@/images/avatars/Carly.JPG'
 
 function TwitterIcon(props) {
   return (
@@ -16,48 +21,42 @@ const people = [
   {
     name: 'Carly',
     role: 'Industrial Designer',
-    imageUrl:
-      'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    imageUrl: Carly,
     twitterUrl: '#',
     linkedinUrl: '#',
   },
   {
     name: 'Ellis',
-    role: 'Front-end Developer',
-    imageUrl:
-      'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    role: 'Industrial Designer',
+    imageUrl: Ellis,
     twitterUrl: '#',
     linkedinUrl: '#',
   },
   {
     name: 'Gem',
-    role: 'Front-end Developer',
-    imageUrl:
-      'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    role: 'Synthesizer',
+    imageUrl: Gem,
     twitterUrl: '#',
     linkedinUrl: '#',
   },
   {
     name: 'Lesley',
     role: 'Team Lead',
-    imageUrl:
-      'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    imageUrl: Lesley,
     twitterUrl: '#',
     linkedinUrl: '#',
   },
   {
     name: 'Sylvia',
-    role: 'Ideator',
-    imageUrl:
-      'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    role: 'Interaction Designer',
+    imageUrl: Sylvia,
     twitterUrl: '#',
     linkedinUrl: '#',
   },
   {
     name: 'Tamuda',
-    role: 'Front-end Developer',
-    imageUrl:
-      'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    role: 'Team Lead',
+    imageUrl: Tamuda,
     twitterUrl: '#',
     linkedinUrl: '#',
   },
@@ -69,15 +68,15 @@ export function Team() {
     <section
       id="team"
       aria-labelledby="author-title"
-      className="relative scroll-mt-14 pb-3 pt-8 sm:scroll-mt-32 sm:pb-16 sm:pt-10 lg:pt-16"
+      className="relative scroll-mt-14 bg-black pb-3 pt-8 text-white sm:scroll-mt-32 sm:pb-16 sm:pt-10 lg:pt-16"
     >
-      <div className="bg-white py-24 sm:py-32">
+      <div className="bg-black py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            <h2 className="bg-gradient-to-br from-blue-400 to-blue-800 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-6xl">
               Our team
             </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="text-white-600 mt-6 text-lg leading-8">
               We’re a dynamic group of individuals who are passionate about
               making life better and easier for students. Because we are
               students too. We can relate.
@@ -85,19 +84,22 @@ export function Team() {
           </div>
           <ul
             role="list"
-            className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+            className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-white sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3"
           >
             {people.map((person) => (
               <li key={person.name}>
-                <img
+                <Image
                   className="aspect-[3/2] w-full rounded-2xl object-cover"
                   src={person.imageUrl}
                   alt=""
+                  objectFit="cover"
+                  objectPosition="top"
                 />
-                <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">
+
+                <h3 className="text-white-900 mt-6 text-lg font-semibold leading-8 tracking-tight">
                   {person.name}
                 </h3>
-                <p className="text-base leading-7 text-gray-600">
+                <p className="text-white-600 text-base leading-7">
                   {person.role}
                 </p>
                 <ul role="list" className="mt-6 flex gap-x-6">
@@ -105,6 +107,7 @@ export function Team() {
                     <a
                       href={person.twitterUrl}
                       className="text-gray-400 hover:text-gray-500"
+                      style={{ color: 'white' }}
                     >
                       <span className="sr-only">Twitter</span>
                       <svg

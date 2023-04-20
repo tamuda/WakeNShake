@@ -3,15 +3,17 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import { Expandable } from '@/components/Expandable'
-import avatarImage3 from '@/images/avatars/avatar-3.png'
-import avatarImage4 from '@/images/avatars/avatar-4.png'
-import avatarImage5 from '@/images/avatars/avatar-5.png'
-import avatarImage6 from '@/images/avatars/avatar-6.png'
-import avatarImage7 from '@/images/avatars/avatar-7.png'
-import avatarImage8 from '@/images/avatars/avatar-8.png'
-import avatarImage9 from '@/images/avatars/avatar-9.png'
-import avatarImage10 from '@/images/avatars/avatar-10.png'
-import avatarImage11 from '@/images/avatars/avatar-11.png'
+import avatarImage1 from '@/images/avatars/durag-black.png'
+import avatarImage12 from '@/images/avatars/blonde-dude.png'
+import avatarImage3 from '@/images/avatars/annoyed-guy.png'
+import avatarImage4 from '@/images/avatars/happy-indian.png'
+import avatarImage5 from '@/images/avatars/happy-lady.png'
+import avatarImage6 from '@/images/avatars/sexy-lady.png'
+import avatarImage7 from '@/images/avatars/shocked-lady.png'
+import avatarImage8 from '@/images/avatars/shoosh-lady.png'
+import avatarImage9 from '@/images/avatars/sleeping-lady.png'
+import avatarImage10 from '@/images/avatars/bored-guy.png'
+import avatarImage11 from '@/images/avatars/prettty.png'
 
 const testimonials = [
   [
@@ -21,6 +23,7 @@ const testimonials = [
       author: {
         name: 'Emily T.',
         role: 'Morning Person',
+        image: avatarImage4,
       },
     },
     {
@@ -29,6 +32,7 @@ const testimonials = [
       author: {
         name: 'Ryan L.',
         role: 'College Freshman',
+        image: avatarImage1,
       },
     },
     {
@@ -37,6 +41,7 @@ const testimonials = [
       author: {
         name: 'Sarah K.',
         role: 'Heavy Sleeper',
+        image: avatarImage5,
       },
     },
   ],
@@ -47,6 +52,7 @@ const testimonials = [
       author: {
         name: 'John M.',
         role: 'Night Shift Worker',
+        image: avatarImage3,
       },
     },
     {
@@ -55,50 +61,47 @@ const testimonials = [
       author: {
         name: 'Emily T.',
         role: 'Working Professional',
+        image: avatarImage6,
       },
     },
-    {
-      content:
-        "As a college student living in a dorm, I often have to wake up at different times than my roommate. It's frustrating to have to use an alarm that wakes us both up. A vibrating alarm clock for just me would be a lifesaver!",
-      author: {
-        name: 'Ryan L.',
-        role: 'College Student',
-      },
-    },
-  ],
-  [
+
     {
       content:
         "I've tried using phone alarms, but they're not effective for me. I need something that will physically wake me up. A vibrating alarm clock seems like a great solution.",
       author: {
         name: 'Sarah K.',
         role: 'Working Professional',
-      },
-    },
-    {
-      content:
-        'As a retiree, I have trouble waking up early but need to for my daily routine. A vibrating alarm clock would be a perfect way to wake up without disturbing my partner.',
-      author: {
-        name: 'John M.',
-        role: 'Retiree',
-      },
-    },
-    {
-      content:
-        'As someone who has trouble sleeping, I think a vibrating alarm clock could help me wake up feeling more refreshed and ready to tackle the day.',
-      author: {
-        name: 'Rachel P.',
-        role: 'Working Professional',
+        image: avatarImage8,
       },
     },
   ],
   [
     {
       content:
+        'As a retiree, I have trouble waking up early but need to for my daily routine. A vibrating alarm clock would be a perfect way to wake up without disturbing my partner.',
+      author: {
+        name: 'Alice K.',
+        role: 'Retiree',
+        image: avatarImage9,
+      },
+    },
+    {
+      content:
+        'As someone who has trouble sleeping, I think a vibrating alarm clock could help me wake up feeling more refreshed and ready to tackle the day.',
+      author: {
+        name: 'Peter S.',
+        role: 'Working Professional',
+        image: avatarImage10,
+      },
+    },
+
+    {
+      content:
         "I've never been a morning person, but I have to get up early for work. A vibrating alarm clock that wakes me up gently would be a game changer.",
       author: {
         name: 'Mark S.',
         role: 'Working Professional',
+        image: avatarImage1,
       },
     },
   ],
@@ -109,6 +112,7 @@ const testimonials = [
       author: {
         name: 'Amanda H.',
         role: 'Stay-at-Home Parent',
+        image: avatarImage11,
       },
     },
   ],
@@ -119,6 +123,7 @@ const testimonials = [
       author: {
         name: 'Michael G.',
         role: 'Student',
+        image: avatarImage12,
       },
     },
   ],
@@ -135,11 +140,11 @@ function Testimonial({ author, children }) {
       <figcaption className="mt-6 flex items-center">
         <div className="overflow-hidden rounded-full bg-slate-50">
           <Image
-            className="h-12 w-12 object-cover"
+            className="h-18 w-18 object-contain"
             src={author.image}
             alt=""
-            width={48}
-            height={48}
+            width={72}
+            height={64}
           />
         </div>
         <div className="ml-4">
