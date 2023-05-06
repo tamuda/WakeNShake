@@ -35,6 +35,7 @@ export default function Home() {
       <Pricing />
       <Waitlist />
       <Testimonials />
+      <Team />
 
       <Footer />
     </>
