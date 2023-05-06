@@ -36,7 +36,6 @@ export default function Home() {
       <Waitlist />
       <Testimonials />
       <Team />
-
       <Footer />
     </>
   )
