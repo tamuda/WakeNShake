@@ -24,6 +24,9 @@ module.exports = {
       '7xl': ['4.5rem', { lineHeight: '1' }],
       '8xl': ['6rem', { lineHeight: '1' }],
       '9xl': ['8rem', { lineHeight: '1' }],
+      '10xl': ['10rem', { lineHeight: '1' }],
+      '11xl': ['12rem', { lineHeight: '1' }],
+      '12xl': ['14rem', { lineHeight: '3rem' }],
     },
     extend: {
       borderRadius: {

@@ -1,0 +1,21 @@
+html,
+body,
+#__next {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.fullscreen-container {
+  position: fixed;
+  inset: 0;
+  display: flex;
+}
+
+.fullscreen-image {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+}
