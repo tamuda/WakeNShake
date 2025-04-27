@@ -23,6 +23,10 @@ export default function Document() {
           rel="stylesheet"
           href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,500,700&display=swap"
         />
+        <link rel="apple-touch-icon" href="/icon.png" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="apple-mobile-web-app-title" content="Wake n Shake" />
       </Head>
       <body>
         <Main />
