@@ -1,6 +1,4 @@
 import React, { use } from 'react'
-import coverImage from '../../images/vibration.gif'
-import wallpaper from '../../images/wallpaper.png'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
 
@@ -49,7 +47,13 @@ const Ringing = () => {
         >
           {time}
         </div>
-        <Image className="small-vibrate object-cover" src={coverImage} alt="" />
+        <Image
+          className="small-vibrate object-cover"
+          src="/images/vibration.gif"
+          width={400}
+          height={400}
+          alt=""
+        />
         <div className=" text-xl font-medium text-white">
           Shake device to stop
         </div>
@@ -76,7 +80,7 @@ const Home = () => {
     <div className="fullscreen-container relative flex h-screen w-full flex-col items-center justify-start bg-black p-8 pt-16 text-white">
       <Image
         className=" absolute left-0 top-0 z-0 object-cover"
-        src={wallpaper}
+        src="/images/wallpaper.png"
         alt=""
         layout="fill"
       />

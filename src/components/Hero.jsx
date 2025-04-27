@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import coverImage from '@/images/vibration.gif'
 
 export function Hero() {
   return (
@@ -9,7 +8,9 @@ export function Hero() {
           <div className="h-full w-full">
             <Image
               className="h-full bg-gray-50 object-cover"
-              src={coverImage}
+              src="/images/vibration.gif"
+              fill
+              sizes="(min-width: 1024px) 50vw, (min-width: 640px) 50vw, 100vw"
               alt=""
             />
           </div>
@@ -50,7 +51,9 @@ export function Hero() {
           <div className="relative z-0 lg:col-span-5 lg:col-start-8 lg:-mr-8 lg:block xl:absolute xl:inset-0 xl:left-1/3 xl:mr-0">
             <Image
               className="hidden h-full bg-gray-50 object-cover lg:inset-0 lg:block lg:aspect-auto lg:w-full"
-              src={coverImage}
+              src="/images/vibration.gif"
+              fill
+              sizes="(min-width: 1024px) 50vw, (min-width: 640px) 50vw, 100vw"
               alt=""
             />
           </div>
