@@ -43,6 +43,7 @@ const Ringing = () => {
             backgroundColor: 'rgba(0, 0, 0, 0.5)',
             padding: '20px',
             borderRadius: '10px',
+            letterSpacing: '-8px', // Reduced letter spacing
           }}
         >
           {time}
@@ -86,7 +87,7 @@ const Home = () => {
         width={1000}
       />
       <div
-        className="pt-18 left-1/2 top-10 z-10 flex -translate-x-1/2 items-center justify-center"
+        className="pt-18 left-1/2 top-10 z-10 flex -translate-x-1/2 items-center justify-center font-bold"
         style={{
           fontSize: '102px',
           fontWeight: 700,
@@ -96,6 +97,7 @@ const Home = () => {
           backgroundColor: 'rgba(0, 0, 0, 0.5)',
           padding: '20px',
           borderRadius: '20px',
+          letterSpacing: '-8px', // Reduced letter spacing
         }}
       >
         {time}
