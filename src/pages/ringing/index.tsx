@@ -29,7 +29,7 @@ const Ringing = () => {
   return (
     <div className="fullscreen-container flex w-full flex-col items-center justify-center bg-black">
       <div
-        className="vibrate flex flex-col items-center justify-center"
+        className=" flex flex-col items-center justify-center"
         onClick={() => stopAlarm()}
       >
         <div className="text-4xl font-medium text-white">Alarm</div>
