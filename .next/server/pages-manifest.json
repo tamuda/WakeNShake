@@ -2,7 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/puzzle": "pages/puzzle.js",
-  "/setup": "pages/setup.js",
-  "/": "pages/index.js"
+  "/": "pages/index.js",
+  "/hci": "pages/hci.js"
 }

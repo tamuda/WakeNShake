@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
-
 // Import the Home component
 const Home = () => {
   const [time, setTime] = useState<string>('');
