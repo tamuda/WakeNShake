@@ -124,7 +124,7 @@ export default function HCI() {
         </p>
 
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
-          {['results-3', 'results-2', 'results-1', 'results-4', 'results-5', 'results-6'].map((img) => (
+          {['results-3', 'results-8', 'results-9', 'results-11', 'results-10', 'results-6'].map((img) => (
             <Image
               key={img}
               src={`/images/${img}.png`}
