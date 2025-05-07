@@ -1,11 +1,6 @@
-<<<<<<< HEAD
-import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
-=======
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
->>>>>>> a5ed0c1fc14efa8346ca00baea6116536b98a950
 
 // Import the Home component
 const Home = () => {

@@ -16,15 +16,6 @@ const Setup = () => {
   const [selectedDays, setSelectedDays] = useState([])
   const [editingAlarm, setEditingAlarm] = useState(null)
   const [alarms, setAlarms] = useState([
-<<<<<<< HEAD
-    { id: 1, time: '07:30', active: true, label: 'Alarm', period: 'AM', repeat: 'Never', alarmType: 'ringing', vibration: 'default', snooze: true },
-    { id: 2, time: '08:25', active: true, label: 'Alarm', period: 'AM', repeat: 'Never', alarmType: 'ringing', vibration: 'default', snooze: false },
-    { id: 3, time: '16:45', active: true, label: 'Puzzle', period: 'PM', repeat: 'Never', alarmType: 'puzzle', vibration: 'default', snooze: true },
-    { id: 4, time: '22:50', active: true, label: 'Shake', period: 'PM', repeat: 'Weekends', alarmType: 'ringing', vibration: 'default', snooze: true }
-  ]);
-  const router = useRouter();
-  const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-=======
     {
       id: 1,
       time: '07:30',
@@ -80,7 +71,6 @@ const Setup = () => {
     'Friday',
     'Saturday',
   ]
->>>>>>> a5ed0c1fc14efa8346ca00baea6116536b98a950
 
   // Initialize with current time + 5 minutes and track current time
   useEffect(() => {
