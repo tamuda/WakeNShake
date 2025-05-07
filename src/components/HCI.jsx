@@ -105,7 +105,7 @@ export default function HCI() {
         </SectionHeading>
         <div className="mt-6 aspect-video rounded-xl overflow-hidden shadow-lg">
           <iframe
-            src="https://www.youtube.com/embed/demo-video-id"
+            src="https://www.youtube.com/embed/HtkZPGZLzF0"
             title="Demo Video of WakeNShake"
             allowFullScreen
             className="w-full h-full"
