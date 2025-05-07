@@ -16,10 +16,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>WakeNShake - Wake up without disturbing others</title>
+        <title>WakeNShake - Wake up without snoozing your alarm</title>
         <meta
           name="description"
-          content="A book and video course that teaches you how to design your own icons from scratch."
+          content="CSC 211 HCI Website."
         />
       </Head>
       <Hero />
